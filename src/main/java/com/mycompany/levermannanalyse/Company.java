@@ -2,16 +2,18 @@ package com.mycompany.levermannanalyse;
 
 import java.io.Serializable;
 
-public class Book implements Serializable {
+public class Company implements Serializable {
 
+    //einzigartiger Identifikator
     private Integer id;
-    private String title;
-    private String author;
-    private String isbn;
-    private Integer year;
-    private Double price;
-
-    public Book() {
+    //name des Unternehmens
+    private String name;
+    //Eigenkapital
+    private String eigenkapital;
+    //Jahresueberschuss
+    private String jahresueberschuss;
+    
+    public Company() {
     }
 
     public Book(String title, String author, String isbn, Integer year, Double price) {
